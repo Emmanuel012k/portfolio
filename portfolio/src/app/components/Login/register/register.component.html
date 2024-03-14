@@ -1,0 +1,28 @@
+<form #ngForm="ngForm" (ngSubmit)="OnRegister()">
+    <h2 class="h1">Zaxos Register</h2>
+<p class="login_">
+     <mat-form-field appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Placeholder" id="name" name="name" [(ngModel)]="model.name">
+    <mat-icon matSuffix>user</mat-icon>     
+  </mat-form-field>
+
+   <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" id="email" name="email" [(ngModel)]="model.email">
+    <mat-icon matSuffix>email</mat-icon>     
+  </mat-form-field>
+ <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" type="password" id="password" name="password" [(ngModel)]="model.password">
+    <mat-icon matSuffix>password</mat-icon>     
+  </mat-form-field>
+  <span class="log" routerLink="/login" >Login</span>
+<br><br>
+   <button type="submit" mat-raised-button color="primary">Submit</button>
+</p>   
+
+</form>
+
+ 

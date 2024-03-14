@@ -1,0 +1,23 @@
+<form #ngform="ngForm" (ngSubmit)="OnSubmit()">
+
+<p class="login_">
+   <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" id="email" name="email" [(ngModel)]="loginUse.email">
+    <mat-icon matSuffix>email</mat-icon>     
+  </mat-form-field>
+ <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" id="password" type="password" name="password" [(ngModel)]="loginUse.password">
+    <mat-icon matSuffix>password</mat-icon>      
+  </mat-form-field>
+     <span class="regis" routerLink="/register" >Register</span>   
+     <br>
+<br>
+   <button type="submit" mat-raised-button color="primary">Submit</button>
+</p>   
+
+</form>
+
+ 
