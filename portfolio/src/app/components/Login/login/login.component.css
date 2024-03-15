@@ -1,14 +1,22 @@
 .login_{
    margin-bottom: 100%;
    text-align: center;
-   margin-top: 200px;
+   margin-top: -100px;
    /* padding: 30px 100px; */
    /* border: 3px solid rosybrown; */
    width: 100px;
    margin-left: 600px;
-   /* background-color: coral; */
-   
+   /* background-color: coral;    */
 }
+
+.sucess{
+    padding: 20px;
+    background-color: black;
+    color: green;
+    text-align: center;
+}
+
+
 
 .regis{
     color: rgb(72, 72, 255);
@@ -16,4 +24,14 @@
     top: -60px;
     padding-right: 28px;
     cursor: pointer;
+}
+
+.img{
+    /* height: 900px;
+    width: 900px; */
+   max-width: 300%;
+ max-height: 100%;  
+  background-size: 800px 600px;  /* Set specific width and height */
+  /* width: 800px;
+  height: 600px; */
 }

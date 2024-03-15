@@ -1,0 +1,53 @@
+{
+  "loginUser": [
+    {
+      "id": "c340",
+      "email": "sfjkh@GMAIL.COM",
+      "password": "33"
+    },
+    {
+      "id": "6deb",
+      "email": "final@gmail.com",
+      "password": "342325"
+    },
+    {
+      "id": "24b1",
+      "email": "emmanuel012k@gmail.com",
+      "password": "EmmuG007$"
+    },
+    {
+      "id": "11af",
+      "email": "Test@gmail.com",
+      "password": "Erir"
+    },
+    {
+      "id": "befe",
+      "email": "tiny",
+      "password": "oeiwut"
+    },
+    {
+      "id": "ad67",
+      "email": "sfjkh@GMAIL.COM",
+      "password": "33"
+    },
+    {
+      "id": "8ed8",
+      "email": "emmanuel01209@gmail.com",
+      "password": "Emuirr"
+    },
+    {
+      "id": "9218",
+      "name": "Emmanuel",
+      "email": "sfjkh@GMAIL.COM",
+      "password": "33"
+    }
+  ],
+  "registerUser": [
+    {
+      "id": "090c",
+      "name": "Emmanuel 2",
+      "email": "sfjkh@GMAIL.COM",
+      "password": "33"
+    }
+  ]
+}

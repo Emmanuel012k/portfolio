@@ -1,3 +1,20 @@
 <div class="dash_1">
-   
+   <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-subtitle>MaxVac</mat-card-subtitle>
+    <mat-card-title>Emmi</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>This card has divider and indeterminate progress as footer</p>
+    <p *ngFor="let user of getUser"> {{user.email }}  </p>
+    <mat-divider></mat-divider>
+  </mat-card-content>
+  <!-- <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions> -->
+  <mat-card-footer>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+  </mat-card-footer>
+</mat-card>
 </div>

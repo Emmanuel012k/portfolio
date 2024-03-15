@@ -1,6 +1,10 @@
 <form #ngform="ngForm" (ngSubmit)="OnSubmit()">
 
-<p class="login_">
+<div *ngIf="successMesssage" class="succesMsg">
+   <h4 class="sucess">SuccessFully Login</h4>
+</div>
+ <img class="img" [src]="[image]" alt="">
+<!-- <p class="login_">
    <mat-form-field appearance="outline">
     <mat-label>Email</mat-label>
     <input matInput placeholder="Placeholder" id="email" name="email" [(ngModel)]="loginUse.email">
@@ -16,7 +20,7 @@
      <br>
 <br>
    <button type="submit" mat-raised-button color="primary">Submit</button>
-</p>   
+</p>    -->
 
 </form>
 

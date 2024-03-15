@@ -15,7 +15,13 @@ import { RegisterComponent } from './components/Login/register/register.componen
 import { FormsModule } from '@angular/forms';
 import { DashboardComponent } from './components/dashboard/dashboard/dashboard.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatCardModule} from '@angular/material/card';
 
+import {MatProgressBarModule} from '@angular/material/progress-bar'; 
+import {MatDividerModule} from '@angular/material/divider';
+ 
 
  
 
@@ -25,7 +31,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     NavbarComponent,
    LoginComponent,
    RegisterComponent,
-   DashboardComponent
+   DashboardComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -37,6 +44,13 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    HttpClientModule,
+    MatTooltipModule,
+    MatCardModule,
+    MatProgressBarModule,
+    MatDividerModule
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]
