@@ -18,10 +18,16 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { HttpClientModule } from '@angular/common/http';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatCardModule} from '@angular/material/card';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 import {MatProgressBarModule} from '@angular/material/progress-bar'; 
 import {MatDividerModule} from '@angular/material/divider';
- 
+import { MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { EmployeeComponent } from './components/employees/employee/employee.component';
+import { UpdateEmployeeComponent } from './components/employees/update-employee/update-employee.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { JobsEmployeeComponent } from './components/jobs/jobs-employee/jobs-employee.component';
+import { JobListingsComponent } from './components/jobs/job-listings/job-listings.component';
 
  
 
@@ -32,6 +38,10 @@ import {MatDividerModule} from '@angular/material/divider';
    LoginComponent,
    RegisterComponent,
    DashboardComponent,
+   EmployeeComponent,
+   UpdateEmployeeComponent,
+   JobsEmployeeComponent,
+   JobListingsComponent,
     
   ],
   imports: [
@@ -48,7 +58,10 @@ import {MatDividerModule} from '@angular/material/divider';
     MatTooltipModule,
     MatCardModule,
     MatProgressBarModule,
-    MatDividerModule
+    MatDividerModule,
+    MatDialogModule,
+    MatAutocompleteModule,
+    MatTabsModule
 
 
   ],

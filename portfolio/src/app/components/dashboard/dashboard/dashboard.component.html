@@ -4,17 +4,57 @@
     <mat-card-subtitle>MaxVac</mat-card-subtitle>
     <mat-card-title>Emmi</mat-card-title>
   </mat-card-header>
+  <img class="img" src="https://images.unsplash.com/photo-1639149888905-fb39731f2e6c?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+  
+  <!-- <ng-container *ngFor="let userDetails of getUser"> -->
+    <br>
   <mat-card-content>
-    <p>This card has divider and indeterminate progress as footer</p>
-    <p *ngFor="let user of getUser"> {{user.email }}  </p>
-    <mat-divider></mat-divider>
+   <p class="edit" (click)="onUpdateUser()"><mat-icon>edit</mat-icon> </p>    
+    <div class="edu-com">  
+    <p>Emmanuel</p>
+       <p>UIUX Developer</p>
+     <div class="comp">
+       <p>MBA</p> 
+    <p>Zaxos Demolish</p>
+     </div>
+   
+    </div>
+     <mat-divider></mat-divider>
   </mat-card-content>
-  <!-- <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions> -->
+  <!-- </ng-container> -->
+   
   <mat-card-footer>
     <mat-progress-bar mode="indeterminate"></mat-progress-bar>
   </mat-card-footer>
 </mat-card>
+ 
+<button class="ademp" mat-raised-button color="accent" (click)="openAddEditEmpForm()">
+         <mat-icon>add</mat-icon>AddEmployee</button>
+     
 </div>
+<br>
+
+
+
+
+
+
+<!-- <table *ngFor="let item of getUser">
+  <tr>
+    <th>Skills</th>
+    <th>Education</th>
+    <th>Experience</th>
+  </tr>
+  <tr>
+    <td>{{item.skills}}</td>
+     <td>{{item.education}}</td>
+     <td>{{item.experience}}</td>
+  </tr>
+  
+</table> -->
+
+<app-jobs-employee></app-jobs-employee>
+
+
+
+

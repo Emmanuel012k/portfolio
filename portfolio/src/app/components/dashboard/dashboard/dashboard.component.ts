@@ -1,6 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { UserModel } from '../../models/login.model';
 import { ZaxosService } from 'src/app/services/zaxos.service';
+import {MAT_DIALOG_DATA, MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+import { LoginComponent } from '../../Login/login/login.component';
+import { RegisterComponent } from '../../Login/register/register.component';
+import { EmployeeComponent } from '../../employees/employee/employee.component';
+import { EmployeeModel } from '../../models/employee.model';
+import { UpdateEmployeeComponent } from '../../employees/update-employee/update-employee.component';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,17 +15,23 @@ import { ZaxosService } from 'src/app/services/zaxos.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit{
-   getUser:UserModel[] = [];
+   getUser:EmployeeModel[] = [];
 
-   constructor (private repoService:ZaxosService){} 
+   constructor (private repoService:ZaxosService,       
+    public dialog: MatDialog
+    ){} 
 
    ngOnInit(): void {
      this.getUserList();
     //  console.log(this.getUserList);
    }
+    
+ 
+
+   
 
    getUserList(){
-    this.repoService.getUsers().subscribe({
+    this.repoService.getEmployees().subscribe({
        next:(reponse) => {
          console.log(reponse);
          this.getUser = reponse;
@@ -32,4 +45,24 @@ export class DashboardComponent implements OnInit{
   originally bred for hunting.`;
 
   
+openAddEditEmpForm(){
+    this.dialog.open(EmployeeComponent,{
+      // width:'200px',
+
+    })
+  }
+
+
+  onUpdateUser(){
+    this.dialog.open(UpdateEmployeeComponent,{
+
+    })
+  }
+ 
+
+
+  
+   
+
 }
+

@@ -1,0 +1,311 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+  <mat-tab label="First">
+     <!-- <form #ngform="ngForm" (ngSubmit)="addEmployee()"> -->
+<form action="">
+    <!-- <div *ngIf="successMesssage" class="succesMsg">
+   <h4 class="sucess">SuccessFully Login</h4>
+</div>
+
+<div *ngIf="emailMesssage" class="succesMsg">
+   <h4 class="emailMessage">Invalid email format. <mat-icon (click)="emailClose()">cancel</mat-icon></h4>
+</div>
+
+<div *ngIf="passwordMessage" class="succesMsg">
+   <h4  class="passMessage">Password must be at least 6 characters long <mat-icon (click)="closeMessage()">cancel</mat-icon></h4>
+</div> -->
+
+<!-- <div *ngIf="passwordMessage" class="succesMsg">
+   <h4  class="passMessage">Password must be at least 6 characters long </h4>
+</div> -->
+
+ <!-- <img class="img" [src]="[image]" alt=""> --> 
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="firstName" placeholder="Placeholder" id="firstName" name="firstName"  >
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" >
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Company</mat-label>
+            <input matInput type="text"  placeholder="Placeholder" id="company" name="company" > 
+        </mat-form-field>
+
+        <!-- <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" id="firstName" name="firstName" [(ngModel)]="employee.firstName">
+    <mat-icon matSuffix>email</mat-icon>     
+  </mat-form-field>
+ <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" id="password" type="lastName" name="lastName" [(ngModel)]="employee.lastName">
+    <mat-icon matSuffix>password</mat-icon>      
+  </mat-form-field> -->
+    </div>
+
+    <!-- <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" [(ngModel)]="employee.lastName">
+        </mat-form-field>
+    <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" [(ngModel)]="employee.lastName">
+        </mat-form-field>
+    </div> -->
+
+    <!-- <div class="row">
+    <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-label><b>Gender</b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="others">Others</mat-radio-button>
+    </mat-radio-group>
+    </div> -->
+    
+    <div class="row">
+           <mat-form-field appearance="outline">
+                <mat-label>Education</mat-label>
+                <input matInput type="education" placeholder="USO" id="education" name="education" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Skills</mat-label>
+                <input matInput type="skills" placeholder="USO" id="skills" name="skills" >
+            </mat-form-field>
+    </div>
+  <div class="row">
+ <mat-form-field appearance="outline">
+            <mat-label>Experience</mat-label>
+            <input matInput type="experience" placeholder="Placeholder" id="experience" name="experience" >
+        </mat-form-field>
+ <mat-form-field appearance="outline">
+            <mat-label>Package</mat-label>
+            <input matInput type="package" placeholder="Placeholder" id="package" name="package" >
+        </mat-form-field>
+</div>
+</div>
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+</div>
+
+</form>
+</mat-tab>
+
+
+
+
+
+
+
+  <mat-tab label="Second">
+    <form action="">
+    <!-- <div *ngIf="successMesssage" class="succesMsg">
+   <h4 class="sucess">SuccessFully Login</h4>
+</div>
+
+<div *ngIf="emailMesssage" class="succesMsg">
+   <h4 class="emailMessage">Invalid email format. <mat-icon (click)="emailClose()">cancel</mat-icon></h4>
+</div>
+
+<div *ngIf="passwordMessage" class="succesMsg">
+   <h4  class="passMessage">Password must be at least 6 characters long <mat-icon (click)="closeMessage()">cancel</mat-icon></h4>
+</div> -->
+
+<!-- <div *ngIf="passwordMessage" class="succesMsg">
+   <h4  class="passMessage">Password must be at least 6 characters long </h4>
+</div> -->
+
+ <!-- <img class="img" [src]="[image]" alt=""> --> 
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="firstName" placeholder="Placeholder" id="firstName" name="firstName"  >
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" >
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Company</mat-label>
+            <input matInput type="text"  placeholder="Placeholder" id="company" name="company" > 
+        </mat-form-field>
+
+        <!-- <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" id="firstName" name="firstName" [(ngModel)]="employee.firstName">
+    <mat-icon matSuffix>email</mat-icon>     
+  </mat-form-field>
+ <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" id="password" type="lastName" name="lastName" [(ngModel)]="employee.lastName">
+    <mat-icon matSuffix>password</mat-icon>      
+  </mat-form-field> -->
+    </div>
+
+    <!-- <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" [(ngModel)]="employee.lastName">
+        </mat-form-field>
+    <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" [(ngModel)]="employee.lastName">
+        </mat-form-field>
+    </div> -->
+
+    <!-- <div class="row">
+    <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-label><b>Gender</b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="others">Others</mat-radio-button>
+    </mat-radio-group>
+    </div> -->
+    
+    <div class="row">
+           <mat-form-field appearance="outline">
+                <mat-label>Education</mat-label>
+                <input matInput type="education" placeholder="USO" id="education" name="education" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Skills</mat-label>
+                <input matInput type="skills" placeholder="USO" id="skills" name="skills" >
+            </mat-form-field>
+    </div>
+  <div class="row">
+ <mat-form-field appearance="outline">
+            <mat-label>Experience</mat-label>
+            <input matInput type="experience" placeholder="Placeholder" id="experience" name="experience" >
+        </mat-form-field>
+ <mat-form-field appearance="outline">
+            <mat-label>Package</mat-label>
+            <input matInput type="package" placeholder="Placeholder" id="package" name="package" >
+        </mat-form-field>
+</div>
+</div>
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+</div>
+
+</form>
+  </mat-tab>
+
+
+  <mat-tab label="Third">
+
+    <form action="">
+    <!-- <div *ngIf="successMesssage" class="succesMsg">
+   <h4 class="sucess">SuccessFully Login</h4>
+</div>
+
+<div *ngIf="emailMesssage" class="succesMsg">
+   <h4 class="emailMessage">Invalid email format. <mat-icon (click)="emailClose()">cancel</mat-icon></h4>
+</div>
+
+<div *ngIf="passwordMessage" class="succesMsg">
+   <h4  class="passMessage">Password must be at least 6 characters long <mat-icon (click)="closeMessage()">cancel</mat-icon></h4>
+</div> -->
+
+<!-- <div *ngIf="passwordMessage" class="succesMsg">
+   <h4  class="passMessage">Password must be at least 6 characters long </h4>
+</div> -->
+
+ <!-- <img class="img" [src]="[image]" alt=""> --> 
+<div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="firstName" placeholder="Placeholder" id="firstName" name="firstName"  >
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" >
+        </mat-form-field>
+        
+        <mat-form-field appearance="outline">
+            <mat-label>Company</mat-label>
+            <input matInput type="text"  placeholder="Placeholder" id="company" name="company" > 
+        </mat-form-field>
+
+        <!-- <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input matInput placeholder="Placeholder" id="firstName" name="firstName" [(ngModel)]="employee.firstName">
+    <mat-icon matSuffix>email</mat-icon>     
+  </mat-form-field>
+ <br>
+  <mat-form-field appearance="outline">
+    <mat-label>Password</mat-label>
+    <input matInput placeholder="Placeholder" id="password" type="lastName" name="lastName" [(ngModel)]="employee.lastName">
+    <mat-icon matSuffix>password</mat-icon>      
+  </mat-form-field> -->
+    </div>
+
+    <!-- <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" [(ngModel)]="employee.lastName">
+        </mat-form-field>
+    <mat-form-field appearance="outline">
+            <mat-label>LastName</mat-label>
+            <input matInput type="lastName" placeholder="Placeholder" id="lastName" name="lasttName" [(ngModel)]="employee.lastName">
+        </mat-form-field>
+    </div> -->
+
+    <!-- <div class="row">
+    <mat-radio-group aria-label="Select an option" formControlName="gender">
+        <mat-label><b>Gender</b></mat-label>
+        <mat-radio-button value="male">Male</mat-radio-button>
+        <mat-radio-button value="female">Female</mat-radio-button>
+        <mat-radio-button value="others">Others</mat-radio-button>
+    </mat-radio-group>
+    </div> -->
+    
+    <div class="row">
+           <mat-form-field appearance="outline">
+                <mat-label>Education</mat-label>
+                <input matInput type="education" placeholder="USO" id="education" name="education" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Skills</mat-label>
+                <input matInput type="skills" placeholder="USO" id="skills" name="skills" >
+            </mat-form-field>
+    </div>
+  <div class="row">
+ <mat-form-field appearance="outline">
+            <mat-label>Experience</mat-label>
+            <input matInput type="experience" placeholder="Placeholder" id="experience" name="experience" >
+        </mat-form-field>
+ <mat-form-field appearance="outline">
+            <mat-label>Package</mat-label>
+            <input matInput type="package" placeholder="Placeholder" id="package" name="package" >
+        </mat-form-field>
+</div>
+</div>
+
+<div mat-dialog-actions class="action">
+    <button mat-raised-button [mat-dialog-close]="false">Cancel</button>
+    <button mat-raised-button color="primary" type="submit">Save</button>
+</div>
+
+</form>
+
+  </mat-tab>
+</mat-tab-group>

@@ -6,6 +6,46 @@
   max-width: 400px;
   top: 20px;
   box-shadow: chocolate;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
+.ademp{
+    margin-left: 1400px;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: 100px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.img{
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+
+/* .com-edu{
+    margin-right: -200px;
+} */
+
+.edu-com{
+    display: flex;
+    gap: 20px;
+}
+
+/* .comp{
+    display: flex;
+} */

@@ -1,0 +1,53 @@
+<div class="job-dec">
+      <ng-container *ngFor="let data of jobs" > 
+   <mat-card class="example-card" routerLink="/job-listings" >
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Web Developer</mat-card-title>
+      <mat-card-subtitle>Regalix</mat-card-subtitle>      
+      <img class="img" mat-card-sm-image [src]="data.image" >
+  </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content >
+    <div class="icon_wise">
+         <span class="material-symbols-outlined">
+    enterprise
+     </span>
+       <span class="icon_text">{{data.experience}} Yrs</span>
+        
+       
+ {{data.salary | currency: "INR"}}
+
+ <span class="material-symbols-outlined">
+   location_on
+</span>
+ {{data.location}}
+    </div>
+     <br>
+    <div class="icon_wise">
+        <span class="material-symbols-outlined">
+lab_profile
+</span>
+<span class="icon_text">{{data.responsbilities}}</span>
+    </div>
+<br>
+    <div class="save" id="icon_wise_s">
+      <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="icon_text">save</span>
+
+    </div>
+
+  </mat-card-content>     
+
+   <ng-template #notFound>
+    No Data
+   </ng-template>
+   
+</mat-card>
+   </ng-container>
+</div>
+
+ 

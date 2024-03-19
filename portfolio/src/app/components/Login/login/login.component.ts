@@ -20,6 +20,9 @@ export class LoginComponent {
 
    successMesssage:boolean = false;
    errorMessgae:boolean = false;
+
+    emailMesssage:boolean = false;
+    passwordMessage:boolean = false;
    constructor(private route:Router, private repoServce:ZaxosService){
   
    }
@@ -29,6 +32,23 @@ export class LoginComponent {
   }
  
   OnSubmit(){
+    
+     // Email validation with regular expression
+    const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (!emailRegex.test(this.loginUse.email)) {
+      this.emailMesssage = true;
+      // this.emailMesssage = 'Invalid email format.';
+      return; // Prevent further processing if email is invalid
+    }
+
+    // Password validation (add complexity requirements as needed)
+    if (this.loginUse.password.length < 6) {
+      this.passwordMessage = true;
+      // this.passwordMessage = 'Password must be at least 6 characters long.';
+      return; // Prevent further processing if password is invalid
+    }
+
+
     console.log(this.loginUse)
     // this.route.navigateByUrl('/dashboard')
     this.successMesssage = true;
@@ -45,10 +65,19 @@ export class LoginComponent {
         this.errorMessgae = true;
       },
     })
+    
     // Send data to local storage
     localStorage.setItem('model', JSON.stringify(this.loginUse));
     sessionStorage.setItem('model', JSON.stringify(this.loginUse));
 
+  }
+
+  closeMessage() {
+    this.passwordMessage = false; // Hide the error message element
+  }
+
+  emailClose() {
+    this.emailMesssage = false; // Hide the error message element
   }
 
 }

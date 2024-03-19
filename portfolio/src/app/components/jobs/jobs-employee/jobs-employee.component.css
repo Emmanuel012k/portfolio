@@ -1,0 +1,50 @@
+.job-dec{
+    text-align: center;
+
+}
+
+.example-card {
+  max-width: 800px;
+  margin-bottom: 8px;
+  text-align: center;
+  margin-left: 300px;
+  cursor: pointer;
+   flex-wrap: wrap;
+   /* border-color: blue; */
+}
+
+.border{
+    border-color: aqua;
+}
+
+.img{
+    border-radius: 20px;
+}
+
+ 
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon_wise{
+    display: flex;
+    gap: 20px;
+}
+
+  
+.material-symbols-outlined{
+    display: flex;
+}
+
+.save{
+    margin-left: 700px;
+}
+
+#icon_wise_s{
+     display: flex;
+    gap: 10px;
+}

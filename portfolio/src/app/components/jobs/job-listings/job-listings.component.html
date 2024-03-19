@@ -1,0 +1,170 @@
+<div class="job-dec">
+      <ng-container *ngFor="let data of jobs" > 
+   <mat-card class="example-card" routerLink="/job-listings" >
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Web Developer</mat-card-title>
+      <mat-card-subtitle>Regalix</mat-card-subtitle>      
+      <img class="img" mat-card-sm-image [src]="data.image" >
+  </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content >
+    <div class="icon_wise">
+         <span class="material-symbols-outlined">
+    enterprise
+     </span>
+       <span class="icon_text">{{data.experience}} Yrs</span>
+        
+        
+
+ {{data.salary | currency: "INR"}}
+
+ <span class="material-symbols-outlined">
+   location_on
+</span>
+ {{data.location}}
+    </div>
+     <br>
+    <div class="icon_wise">
+        <span class="material-symbols-outlined">
+lab_profile
+</span>
+<span class="icon_text">{{data.responsbilities}}</span>
+    </div>
+<br>
+    <div class="save" id="icon_wise_s">
+       <button mat-raised-button color="primary" >Save</button> &nbsp; <button mat-raised-button color="primary">Apply</button>
+    </div>
+    <br>
+    <mat-divider></mat-divider>
+    <br>
+    <span>Posted:4days ago </span> | <span>Openings:5</span> | <span>Applicants:1202</span>
+
+  </mat-card-content>  
+   <ng-template #notFound>
+    No Data
+   </ng-template>
+   
+</mat-card>
+   </ng-container>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ----------------------------------------- -->
+
+ 
+
+
+<div class="job-dec" >     
+   <mat-card class="example-card" id="icon_wise_c" routerLink="/job-listings"  >
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Job highlights</mat-card-title>
+      
+  </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content >
+    <div>
+        <p>
+       * Experience with CSS frameworks such as Material Design,Bootstrap,etc .
+       <br>
+        Experience with CMS frameworks such as Joomla,WordPress etc . Come up with UI and UX strategies based on our target goals
+      </p>
+
+
+      <br>
+
+      <div >
+      <div class="job_match">Job match score</div>
+      <span>
+        Early Applicant 
+      </span> |
+      <span>
+        Keyskills 
+      </span>|
+      <span>
+        Location 
+      </span>|
+      <span>
+        Work Experience
+      </span>
+       </div>
+    </div>
+ 
+     
+    <mat-divider></mat-divider>
+    <br>
+  </mat-card-content>
+    
+</mat-card>
+ 
+</div>
+
+ 
+ 
+
+
+
+
+  <!-- <div class="job-dec">
+      <ng-container *ngFor="let data of jobs" > 
+   <mat-card class="example-card" routerLink="/job-listings" >
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>Web Developer</mat-card-title>
+      <mat-card-subtitle>Regalix</mat-card-subtitle>      
+      <img class="img" mat-card-sm-image [src]="data.image" >
+  </mat-card-title-group>
+  </mat-card-header>
+
+  <mat-card-content >
+    <div class="icon_wise">
+         <span class="material-symbols-outlined">
+    enterprise
+     </span>
+       <span class="icon_text">{{data.experience}} Yrs</span>
+        
+       
+ {{data.salary | currency: "INR"}}
+
+ <span class="material-symbols-outlined">
+   location_on
+</span>
+ {{data.location}}
+    </div>
+     <br>
+    <div class="icon_wise">
+        <span class="material-symbols-outlined">
+lab_profile
+</span>
+<span class="icon_text">{{data.responsbilities}}</span>
+    </div>
+<br>
+    <div class="save" id="icon_wise_s">
+      <span class="material-symbols-outlined">
+favorite
+</span>
+<span class="icon_text">save</span>
+
+    </div>
+
+  </mat-card-content>     
+
+   <ng-template #notFound>
+    No Data
+   </ng-template>
+   
+</mat-card>
+   </ng-container>
+</div> -->
+
+ 

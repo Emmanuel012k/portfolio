@@ -40,6 +40,51 @@
       "name": "Emmanuel",
       "email": "sfjkh@GMAIL.COM",
       "password": "33"
+    },
+    {
+      "id": "939e",
+      "email": "Emmi@gmail.com",
+      "password": "EmmuI007"
+    },
+    {
+      "id": "a830",
+      "email": "emmanuel012k@gmail.com",
+      "password": "EmmuG007"
+    },
+    {
+      "id": "bfcd",
+      "email": "sfjkh@GMAIL.COM",
+      "password": "33ssssssssssssssssss"
+    },
+    {
+      "id": "a0b6",
+      "email": "hello@gmail.com",
+      "password": "emmanuel"
+    },
+    {
+      "id": "9be9",
+      "email": "sfjkh@GMAIL.COM",
+      "password": "33fffff"
+    },
+    {
+      "id": "9c5e",
+      "email": "final@gmail.com",
+      "password": "342325"
+    },
+    {
+      "id": "0b0e",
+      "email": "emmanuielk@gmail.com",
+      "password": "6464564"
+    },
+    {
+      "id": "f270",
+      "email": "emmanuel012k@gmail.com",
+      "password": "Emmu007"
+    },
+    {
+      "id": "4cba",
+      "email": "final@gmail.com",
+      "password": " reter"
     }
   ],
   "registerUser": [
@@ -48,6 +93,48 @@
       "name": "Emmanuel 2",
       "email": "sfjkh@GMAIL.COM",
       "password": "33"
+    }
+  ],
+  "employees": [
+    {
+      "id": "9ce2",
+      "firstName": "Galipothula ",
+      "lastName": "G",
+      "company": "",
+      "experience": 0,
+      "package": 0,
+      "skills": "",
+      "education": ""
+    },
+    {
+      "id": "1ace",
+      "firstName": "Galipothula ",
+      "lastName": "G",
+      "company": "",
+      "experience": 0,
+      "package": 0,
+      "skills": "",
+      "education": ""
+    },
+    {
+      "id": "a922",
+      "firstName": "Comp",
+      "lastName": "ss",
+      "company": "sss",
+      "experience": "34",
+      "package": "34",
+      "skills": "sss",
+      "education": "sss"
+    },
+    {
+      "id": "5e8f",
+      "firstName": "Comp",
+      "lastName": "ss",
+      "company": "FutureBlock",
+      "experience": "12",
+      "package": "12",
+      "skills": "Astro",
+      "education": "sss"
     }
   ]
 }
