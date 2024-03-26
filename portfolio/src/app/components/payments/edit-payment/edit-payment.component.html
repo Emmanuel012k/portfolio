@@ -1,0 +1,74 @@
+ <ng-container *ngIf="payment">
+
+<br><br><br><br><br>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Save with yearly billing - 40% off ($100)</h1>
+        <p *ngIf="emailMessage">
+           Invalid Email
+        </p>
+
+         <p *ngIf="fistNae">
+           InValid Name
+        </p>
+    </div>
+
+    <br><br><br>
+
+<form #ngform="ngForm" (ngSubmit)="updateSubmit()"> 
+      
+    <div class="padin">
+    <div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="firstName" placeholder="Placeholder" id="firstName" name="firstName" [(ngModel)]="payment.firstName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Placeholder" id="email" name="email" [(ngModel)]="payment.email">
+        </mat-form-field>   
+    </div>
+
+   
+    
+    <div class="row">
+       <mat-form-field appearance="outline">
+       <mat-label>Card Number</mat-label>
+       <input matInput type="number" placeholder="99+" id="number" name="number" [(ngModel)]="payment.cardNumber">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>cvv</mat-label>
+        <input matInput type="text" placeholder="stadiumName" id="stadiumName" name="stadiumName" [(ngModel)]="payment.cvv">
+      </mat-form-field>
+    </div>
+
+  <div class="row">
+ <mat-form-field appearance="outline">
+   <mat-label>Country</mat-label>
+   <input matInput type="text" placeholder="Placeholder" id="country" name="country" [(ngModel)]="payment.country">
+  </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Zip Code</mat-label>
+        <input matInput type="text" placeholder="stadiumName" id="zipCode" name="zipCode" [(ngModel)]="payment.zipCode" >
+      </mat-form-field>
+ 
+    </div>
+   </div>
+   
+ </div>
+ 
+
+
+ 
+<div mat-dialog-actions class="action">
+    <button class="save" mat-raised-button color="primary" type="submit">Payment</button>
+</div> 
+
+</form>
+
+ 
+</div>
+</ng-container>

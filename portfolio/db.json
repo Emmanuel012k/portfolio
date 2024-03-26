@@ -85,6 +85,36 @@
       "id": "4cba",
       "email": "final@gmail.com",
       "password": " reter"
+    },
+    {
+      "id": "bf30",
+      "email": "final@gmail.com",
+      "password": "342325"
+    },
+    {
+      "id": "3030",
+      "email": "final@gmail.com",
+      "password": "342fggf"
+    },
+    {
+      "id": "1719",
+      "email": "emmanuel012k@gmail.com",
+      "password": "Emmu7008"
+    },
+    {
+      "id": "049e",
+      "email": "final@gmail.com",
+      "password": "342325"
+    },
+    {
+      "id": "d3f3",
+      "email": "final@gmail.com",
+      "password": "34ttttt"
+    },
+    {
+      "id": "efb2",
+      "email": "mi@gmail.com",
+      "password": "ertyio"
     }
   ],
   "registerUser": [
@@ -135,6 +165,68 @@
       "package": "12",
       "skills": "Astro",
       "education": "sss"
+    }
+  ],
+  "bookingAdmin": [
+    {
+      "id": "5ef7",
+      "name": "Emmanuel",
+      "email": "emmanuel012k@gmail.com",
+      "phone": 8074411588,
+      "stadiumName": "Uppal",
+      "no": 0,
+      "parking": "1",
+      "food": "Pizza",
+      "rooms": 2,
+      "members": 1,
+      "stay": "",
+      "price": 2
+    }
+  ],
+  "addpayment": [
+    {
+      "firstName": "Emmanuel",
+      "cardNumber": 3345535,
+      "country": "India",
+      "zipCode": "34534",
+      "cvv": "34455",
+      "id": "923b"
+    },
+    {
+      "firstName": "Emmi",
+      "cardNumber": 54654646,
+      "country": "Mumbai",
+      "zipCode": "04566",
+      "cvv": "4565",
+      "id": "c64d"
+    },
+    {
+      "firstName": "David",
+      "cardNumber": 8524713669,
+      "country": "Lebanon",
+      "zipCode": "787",
+      "cvv": "8974",
+      "id": "3c05"
+    },
+    {
+      "id": "",
+      "firstName": "PremKumar",
+      "email": "prem12@gmail.com",
+      "cardNumber": 55564,
+      "cvv": "554",
+      "zipCode": "45545",
+      "country": "AP"
+    },
+    {
+      "id": "",
+      "firstName": "",
+      "email": "emmanuel012k@gmail.com",
+      "cardNumber": 0,
+      "cvv": 0,
+      "zipCode": 0,
+      "country": [
+        "Poland"
+      ]
     }
   ]
 }

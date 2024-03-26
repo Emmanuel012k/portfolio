@@ -49,3 +49,14 @@ tr:nth-child(even) {
 /* .comp{
     display: flex;
 } */
+
+.dis_flex{
+  display: flex;
+  gap: 20px;
+  font-size: medium;
+  font-weight: 500;
+  color: blue;
+  margin-left: 200px;
+  margin-top: 30px;
+  cursor: pointer;
+}

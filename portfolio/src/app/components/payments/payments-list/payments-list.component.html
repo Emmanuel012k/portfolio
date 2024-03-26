@@ -1,0 +1,35 @@
+  <h4 class="title">PaymentS</h4>
+  
+
+
+<mat-icon>plus</mat-icon>
+
+  <div *ngIf="loading" class="loader">
+     
+  </div>
+
+
+ <div *ngFor="let data of paymentsList ">
+    <!-- <h4>{{data.firstName}}</h4> -->
+    <mat-card>
+  <mat-card-content>
+    {{data.firstName}}
+    <div>
+        {{data.cardNumber | number}}
+    </div>
+    <div >
+<a [routerLink]="['/editpayment', data.id]"><mat-icon >edit</mat-icon></a>
+</div>
+    <div class="email">
+     {{data.email}}
+    </div>
+</mat-card-content>
+
+ 
+
+</mat-card>
+
+    
+ </div>
+<br><br>
+ <a class="save"  routerLink="/payment"><-- Back</a>

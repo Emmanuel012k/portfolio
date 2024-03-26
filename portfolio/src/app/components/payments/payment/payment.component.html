@@ -1,0 +1,81 @@
+<br><br><br><br><br>
+  <div class="container">
+    <div class="header">
+      <h1 class="title">Save with yearly billing - 40% off ($100)</h1>
+
+       
+         <p *ngIf="fistNae">
+           InValid Name
+        </p>
+
+ 
+
+         
+    </div>
+     
+     <p *ngIf="emailMessage" class="email_mess">
+           Please Enter Email Id
+        </p>
+
+
+    <div *ngIf="sucessMessage" class="succesMsg">
+   <h4 class="sucess">Payment SuccessFully</h4>
+</div>
+    <br><br><br>
+
+<form #ngform="ngForm" (ngSubmit)="onBookingSubmit()"> 
+      
+    <div class="padin">
+    <div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="firstName" placeholder="Placeholder" id="firstName" name="firstName" [(ngModel)]="addPayment.firstName">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Placeholder" id="email" name="email" [(ngModel)]="addPayment.email">
+        </mat-form-field>   
+    </div>
+
+   
+    
+    <div class="row">
+       <mat-form-field appearance="outline">
+       <mat-label>Card Number</mat-label>
+       <input matInput type="number" placeholder="99+" id="number" name="number" [(ngModel)]="addPayment.cardNumber">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>cvv</mat-label>
+        <input matInput type="text" placeholder="stadiumName" id="stadiumName" name="stadiumName" [(ngModel)]="addPayment.cvv">
+      </mat-form-field>
+    </div>
+
+  <div class="row">
+ <mat-form-field appearance="outline">
+   <mat-label>Country</mat-label>
+   <input matInput type="text" placeholder="Placeholder" id="country" name="country" [(ngModel)]="addPayment.country">
+  </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Zip Code</mat-label>        
+        <input matInput type="text" placeholder="stadiumName" id="zipCode" name="zipCode" [(ngModel)]="addPayment.zipCode" >
+      </mat-form-field>
+ 
+    </div>
+   </div>
+   
+ </div>
+ 
+
+
+ 
+<div mat-dialog-actions class="action">
+    <button class="save" mat-raised-button color="primary" type="submit">Payment</button>
+</div> 
+
+</form>
+
+ 
+</div>

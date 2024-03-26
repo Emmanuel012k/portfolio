@@ -28,8 +28,14 @@ import { UpdateEmployeeComponent } from './components/employees/update-employee/
 import {MatTabsModule} from '@angular/material/tabs';
 import { JobsEmployeeComponent } from './components/jobs/jobs-employee/jobs-employee.component';
 import { JobListingsComponent } from './components/jobs/job-listings/job-listings.component';
+import { StartUpComponent } from './components/start-up/start-up.component';
+import {MatSelectModule} from '@angular/material/select';
+ import {MatBadgeModule} from '@angular/material/badge';
+import {MatRadioModule} from '@angular/material/radio';
+import { PaymentComponent } from './components/payments/payment/payment.component';
+import { PaymentsListComponent } from './components/payments/payments-list/payments-list.component';
+import { EditPaymentComponent } from './components/payments/edit-payment/edit-payment.component';
 
- 
 
 @NgModule({
   declarations: [
@@ -42,6 +48,12 @@ import { JobListingsComponent } from './components/jobs/job-listings/job-listing
    UpdateEmployeeComponent,
    JobsEmployeeComponent,
    JobListingsComponent,
+   StartUpComponent,
+   PaymentComponent,
+   PaymentsListComponent,
+   EditPaymentComponent,
+   
+   
     
   ],
   imports: [
@@ -61,7 +73,12 @@ import { JobListingsComponent } from './components/jobs/job-listings/job-listing
     MatDividerModule,
     MatDialogModule,
     MatAutocompleteModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSelectModule,
+    MatBadgeModule,
+    MatRadioModule
+   
+
 
 
   ],

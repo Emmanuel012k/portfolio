@@ -1,0 +1,39 @@
+ .content{
+    padding-top: 10px;
+	/* padding: 100px;
+	border-color: 2px solid red; */
+	border: 10px;
+
+ }
+
+
+ .padin{
+  padding: 100px 200px;
+  border: 1px solid #c7f8c8;     
+  padding-top: 50px;
+  padding-right: 130px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+ }
+
+ .save{
+	padding: 20px 70px;
+
+ }
+
+ .row{
+    display: flex;
+    gap: 10px;
+	margin-left: 300px;
+
+	
+ }
+ mat-form-field{
+    width: 30%;
+ }
+
+ .action{
+    text-align: center;
+	
+      
+ }

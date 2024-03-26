@@ -1,0 +1,107 @@
+<br><br><br><br><br>
+
+
+<form #ngform="ngForm" (ngSubmit)="onBookingSubmit()"> 
+  
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+  <mat-tab label="First">   
+    
+    <div class="padin">
+    <div mat-dialog-content class="content">
+    <div class="row">
+        <mat-form-field appearance="outline">
+            <mat-label>FirstName</mat-label>
+            <input matInput type="firstName" placeholder="Placeholder" id="firstName" name="firstName" [(ngModel)]="bookShow.name"  >
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput type="email" placeholder="Placeholder" id="email" name="email" [(ngModel)]="bookShow.email"  >
+        </mat-form-field>   
+    </div>
+
+   
+    
+    <div class="row">
+       <mat-form-field appearance="outline">
+       <mat-label>Phone</mat-label>
+       <input matInput type="number" placeholder="99+" id="number" name="number" [(ngModel)]="bookShow.phone" >
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+        <mat-label>Stadium</mat-label>
+        <input matInput type="text" placeholder="stadiumName" id="stadiumName" name="stadiumName" [(ngModel)]="bookShow.stadiumName" >
+      </mat-form-field>
+    </div>
+
+  <div class="row">
+ <mat-form-field appearance="outline">
+   <mat-label>No.of</mat-label>
+   <input matInput type="number" placeholder="Placeholder" id="members" name="members" [(ngModel)]="bookShow.members">
+  </mat-form-field>
+         
+<mat-radio-group aria-label="Select an option" id="members" name="members" [(ngModel)]="bookShow.parking">
+      <mat-label>Parking</mat-label>
+      <mat-radio-button value="1">Yes</mat-radio-button>
+      <mat-radio-button value="2">No</mat-radio-button>
+    </mat-radio-group>
+    </div>
+   </div>
+ </div>
+</mat-tab>
+
+
+ <mat-tab label="Second">   
+    <div class="padin">   
+  <div mat-dialog-content class="content">
+      <div class="row">
+          <mat-form-field appearance="outline">
+              <mat-label>Food</mat-label>
+              <input matInput type="text" placeholder="Placeholder" id="food" name="food"  [(ngModel)]="bookShow.food">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+              <mat-label>Rooms</mat-label>
+              <input matInput type="number" placeholder="Placeholder" id="rooms" name="rooms" [(ngModel)]="bookShow.rooms">
+          </mat-form-field>     
+      </div>
+
+      
+    
+      
+      <div class="row">
+            <mat-form-field appearance="outline">
+                  <mat-label>Price</mat-label>
+                  <input matInput type="number" placeholder="price" id="price" name="price" [(ngModel)]="bookShow.price">
+              </mat-form-field>
+
+              <mat-form-field appearance="outline">
+                  <mat-label>Skills</mat-label>
+                  <input matInput type="skills" placeholder="USO" id="skills" name="skills" >
+              </mat-form-field>
+      </div>
+    <div class="row">
+  <mat-form-field appearance="outline">
+              <mat-label>Experience</mat-label>
+              <input matInput type="experience" placeholder="Placeholder" id="experience" name="experience" >
+          </mat-form-field>
+  <mat-form-field appearance="outline">
+              <mat-label>Package</mat-label>
+              <input matInput type="package" placeholder="Placeholder" id="package" name="package" >
+          </mat-form-field>
+  </div>
+
+  <div class="row">
+    
+  </div>
+
+  </div>
+ </div>
+
+<div mat-dialog-actions class="action">
+    <button class="save" mat-raised-button color="primary" type="submit">Save</button>
+</div> 
+
+  </mat-tab>
+</mat-tab-group>
+ 
+</form>

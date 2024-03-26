@@ -4,6 +4,10 @@ import { UserModel } from '../components/models/login.model';
 import { Observable } from 'rxjs';
 import { Register } from '../components/models/register.model';
 import { EmployeeModel } from '../components/models/employee.model';
+import { BookingShow } from '../components/models/bookings.model';
+import { Payment } from '../components/models/payments.model';
+import { updatePayment } from '../components/models/update-payment.model';
+ 
 
 @Injectable({
   providedIn: 'root'
@@ -33,5 +37,30 @@ export class ZaxosService {
   getEmployees():Observable <EmployeeModel[]>{
    return this._http.get<EmployeeModel[]>('http://localhost:3000/employees')
   }
+
+  // bookings 
+  addAdminBooking(model:BookingShow): Observable<BookingShow>{
+   return this._http.post<BookingShow>('http://localhost:3000/bookingAdmin', model)
+  }
+
+  addPaymets(model:Payment) :Observable <Payment>{
+    return this._http.post<Payment>('http://localhost:3000/addpayment', model)
+  }
+  
+  getPayments():Observable <Payment[]>{
+   return this._http.get<Payment[]>('http://localhost:3000/addpayment')
+  }
+
+  // getByIdPayment
+  getByIdPayemnts(id:string):Observable<Payment>{
+   return this._http.get<Payment>(`http://localhost:3000/addpayment/${id}`)
+  }
+
+
+  // UpdatePayment
+  updatePayment(id:string, update:updatePayment):Observable<Payment>{
+     return this._http.put<Payment>(`http://localhost:3000/addpayment/${id}`, update)
+  }
+
 
 }
