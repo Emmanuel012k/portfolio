@@ -4,13 +4,9 @@
       <h1 class="title">Save with yearly billing - 40% off ($100)</h1>
 
        
-         <p *ngIf="fistNae">
+      <p *ngIf="fistNae">
            InValid Name
-        </p>
-
- 
-
-         
+        </p> 
     </div>
      
      <p *ngIf="emailMessage" class="email_mess">
@@ -53,10 +49,21 @@
     </div>
 
   <div class="row">
- <mat-form-field appearance="outline">
-   <mat-label>Country</mat-label>
-   <input matInput type="text" placeholder="Placeholder" id="country" name="country" [(ngModel)]="addPayment.country">
-  </mat-form-field>
+<!-- <select [(ngModel)]="addPayment.country">
+  <option *ngFor="let country of countries" [value]="country">
+    {{ country }}
+  </option>
+</select> -->
+  <mat-form-field appearance="outline">
+            <mat-label>Country</mat-label>
+            <mat-select [(ngModel)]="addPayment.country">
+                <mat-option *ngFor="let edu of countries" [value]="edu" > 
+                  {{edu}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+
 
       <mat-form-field appearance="outline">
         <mat-label>Zip Code</mat-label>        

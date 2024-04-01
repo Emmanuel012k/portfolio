@@ -1,0 +1,87 @@
+ <mat-card>
+  <mat-card-content>
+             <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" >
+
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <br><br>
+ <div class="title_res">
+  
+   <span class="span">Hitech City, Hyderabad</span><br>
+    <span class="span"  mat-raised-button
+        matTooltip="Berverages European Italian Pizza sushi Modern Indian"
+        aria-label="Button that displays a tooltip when focused or hovered over">2000 two approx | Berverages European... </span>
+    <br>
+        <span class="grn">Open from 12:00pm - 11:00pm</span>
+ </div>
+<br><br>
+  <mat-divider></mat-divider>
+  <div class="flex-container">
+      <ul class="over">About</ul>
+      <ul class="bnt2" routerLink="/menu">Menu</ul>
+      <ul class="btn3">Photos</ul>
+      <ul class="btn4">Reviews</ul>
+      <ul class="btn5">PayMeny</ul>
+  </div>
+
+  <mat-divider></mat-divider>
+  <br>
+      <div class="about">
+         <h4>Discount Calculator</h4>
+
+       <mat-card class="bill_c">
+        <h3 class="simpleBill">Sample Bill</h3>
+        <mat-divider></mat-divider>
+        <div class="rs_inr">
+          <p>Total Bill</p>
+          <p>2000</p>
+        </div>
+       <mat-divider></mat-divider>
+
+        <div class="rs_inr">
+          <p>Eazydiner Discount</p>
+          <p>- ₹650</p>
+        </div>
+
+       <mat-divider></mat-divider>
+        <div class="rs_inr">
+          <p>You Paid</p>
+          <p>₹1350</p>
+        </div>
+      </mat-card>
+      </div>
+
+
+     
+    <!-- <app-hotels-list [dataArray]="parentArray"></app-hotels-list> -->
+
+  <div class="map">
+   <google-map height="300px"
+            width="850px"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)">
+</google-map>
+ </div>
+
+<mat-divider></mat-divider>
+
+<br><br>
+
+<div class="features">
+  <p class="feat_title">Restaurant Features</p>
+
+ <app-child [dataArray]="parentArray"></app-child>
+   
+</div>
+</mat-card>
+
+  
+
+
+
+<!-- <div class="elfsight-app-ee1bf5c0-24d7-4e49-8f42-4514e263c290" data-elfsight-app-lazy></div> -->
+
+ 
+

@@ -10,7 +10,7 @@ import { UserModel } from '../../models/login.model';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
-
+   timeOut:any;
    loginUse:UserModel = {
     email:'',
     password:'',
@@ -31,39 +31,39 @@ export class LoginComponent {
     localStorage.setItem(key, JSON.stringify(loginUse));
   }
  
-  OnSubmit(){
+  OnSubmit(){   
     
-     // Email validation with regular expression
     const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     if (!emailRegex.test(this.loginUse.email)) {
-      this.emailMesssage = true;
-      // this.emailMesssage = 'Invalid email format.';
-      return; // Prevent further processing if email is invalid
+      this.emailMesssage = true;      
+      return;
     }
-
-    // Password validation (add complexity requirements as needed)
+    
     if (this.loginUse.password.length < 6) {
-      this.passwordMessage = true;
-      // this.passwordMessage = 'Password must be at least 6 characters long.';
-      return; // Prevent further processing if password is invalid
+      this.passwordMessage = true;       
+      return; 
     }
 
-
-    console.log(this.loginUse)
-    // this.route.navigateByUrl('/dashboard')
+    console.log(this.loginUse)   
     this.successMesssage = true;
     this.repoServce.loginAdd(this.loginUse).subscribe({
       next:(response) => {
         console.log(response);
-         setTimeout(() => {
+     this.timeOut =  setTimeout(() => {
      this.route.navigateByUrl('/dashboard')
     }, 3000); 
         
       },
+
         error:(err) => {
         console.log(err);
         this.errorMessgae = true;
       },
+
+    //     clearTimeout(){
+    //   clearTimeout(this.timeOut)
+    // }
+      
     })
     
     // Send data to local storage

@@ -35,6 +35,16 @@ import {MatRadioModule} from '@angular/material/radio';
 import { PaymentComponent } from './components/payments/payment/payment.component';
 import { PaymentsListComponent } from './components/payments/payments-list/payments-list.component';
 import { EditPaymentComponent } from './components/payments/edit-payment/edit-payment.component';
+import { HotelsListComponent } from './components/venues-bars/hotels-list/hotels-list.component';
+// import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HotelDetailsComponent } from './components/venues-bars/hotel-details/hotel-details.component';
+import { ChildComponent } from './components/Data-Pass/child/child.component';
+import { ParentComponent } from './components/Data-Pass/parent/parent.component';
+import { MenuComponent } from './components/about-hotels/menu/menu.component';
+// import { AgmCoreModule } from '@angular/google-maps';
+
+ 
 
 
 @NgModule({
@@ -52,10 +62,14 @@ import { EditPaymentComponent } from './components/payments/edit-payment/edit-pa
    PaymentComponent,
    PaymentsListComponent,
    EditPaymentComponent,
-   
-   
-    
+   HotelsListComponent,
+   HotelDetailsComponent,
+   ChildComponent,
+   ParentComponent,
+   MenuComponent,     
   ],
+
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -76,8 +90,8 @@ import { EditPaymentComponent } from './components/payments/edit-payment/edit-pa
     MatTabsModule,
     MatSelectModule,
     MatBadgeModule,
-    MatRadioModule
-   
+    MatRadioModule,
+    GoogleMapsModule
 
 
 

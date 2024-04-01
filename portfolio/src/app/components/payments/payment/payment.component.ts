@@ -25,7 +25,7 @@ export class PaymentComponent implements OnDestroy{
     country:''
    }
 
-   countries = [
+     countries: string[] = [
     'India',
     'USA',
     'Germany',
