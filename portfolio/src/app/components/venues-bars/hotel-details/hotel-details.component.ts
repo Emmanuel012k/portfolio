@@ -1,6 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { HotelsListComponent } from '../hotels-list/hotels-list.component';
 
+interface Food {
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-hotel-details',
@@ -9,11 +13,26 @@ import { HotelsListComponent } from '../hotels-list/hotels-list.component';
 })
 export class HotelDetailsComponent implements OnInit{
   @Input() dataArray: any[];
-  ngOnInit(): void {
-     
+   increments:number = 0
+   count = 0
+
+  ngOnInit(): void {     
   }
    
-
+  countries: string[] = [
+    'India',
+    'USA',
+    'Germany',
+    'England',
+    'Africa',
+    'Austria',
+    'Australia',
+    'NewZealand',
+    'Dubai',
+    'Poland',
+    'China',
+   ]
+   
   
   parentArray = [
     {
@@ -45,6 +64,18 @@ export class HotelDetailsComponent implements OnInit{
     if(event.latLng != null)
     this.display = event.latLng.toJSON();
   }
+  
+   
+  increment(){
+    this.count++;
+  }
+  
 
+decrement() {
+    if (this.count > 0) {
+      this.count--;
+    }
+
+  }
   
 }

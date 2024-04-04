@@ -1,0 +1,62 @@
+<br><br>
+<br><br><br> 
+
+<div class="Card">
+
+<mat-card>
+     <mat-chip-listbox aria-label="Fish selection">
+  <mat-card-content>
+      <h4>Select Slot & Guests</h4>
+     
+      <div class="dates" *ngFor="let item of parentArray">
+       <!-- <mat-card> -->
+        <mat-chip-option> {{item.monday}} |{{item.dates}}</mat-chip-option>
+       
+       <!-- </mat-card> -->
+        <mat-chip-option> {{item.tuesday}} |{{item.next}}</mat-chip-option>
+        <mat-chip-option> {{item.wednesday}} |{{item.dates}}</mat-chip-option>
+        <mat-chip-option> {{item.tursday}} |{{item.dates}}</mat-chip-option>
+         <mat-chip-option> {{item.friday}} |{{item.dates}}</mat-chip-option>
+    </div>
+    <br><br>
+      <h3>During_time</h3>
+       <div class="during_time">
+           <mat-chip-option> 01:00pm</mat-chip-option>
+           <mat-chip-option> 01:00pm</mat-chip-option>
+            <mat-chip-option> 01:00pm</mat-chip-option>
+           <mat-chip-option> 01:00pm</mat-chip-option>
+            <mat-chip-option> 01:00pm</mat-chip-option>
+           <!-- <mat-chip-option> 01:00pm</mat-chip-option> -->
+       </div>
+
+
+        <br><br>
+      <h3>How Many Guests?</h3>
+       <div class="during_time">
+           <mat-chip-option>1</mat-chip-option>
+           <mat-chip-option> 2</mat-chip-option>
+            <mat-chip-option> 3</mat-chip-option>
+           <mat-chip-option>4</mat-chip-option>
+            <mat-chip-option> 5</mat-chip-option>
+
+            <mat-chip-option>6</mat-chip-option>
+           <mat-chip-option> 7</mat-chip-option>
+            <mat-chip-option> 8</mat-chip-option>
+           <mat-chip-option>9</mat-chip-option>
+            <mat-chip-option>10</mat-chip-option>
+           <!-- <mat-chip-option> 01:00pm</mat-chip-option> -->
+       </div>
+      
+  </mat-card-content>   
+ </mat-chip-listbox>
+</mat-card>
+    
+</div>
+
+
+
+ 
+
+<!-- <app-footer></app-footer> -->
+
+<!-- <div class="elfsight-app-ee1bf5c0-24d7-4e49-8f42-4514e263c290" data-elfsight-app-lazy></div> -->

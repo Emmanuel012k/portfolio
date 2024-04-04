@@ -1,0 +1,136 @@
+  <div class="date">
+    {{this.today}}
+  </div> 
+
+ 
+ 
+ <mat-card> 
+  <mat-card-content>
+ <div class="elfsight-app-ee1bf5c0-24d7-4e49-8f42-4514e263c290 img" data-elfsight-app-lazy></div>
+  </mat-card-content>
+  <mat-divider></mat-divider>
+  <br><br>
+ <div class="title_res">
+  
+   <span class="span">Hitech City, Hyderabad</span><br>
+    <span class="span"  mat-raised-button
+        matTooltip="Berverages European Italian Pizza sushi Modern Indian"
+        aria-label="Button that displays a tooltip when focused or hovered over">2000 two approx | Berverages European... </span>
+    <br>
+        <span class="grn">Open from 12:00pm - 11:00pm</span>
+ </div>
+<br><br>
+  <mat-divider></mat-divider>
+  <div class="flex-container">
+      <ul class="over">About</ul>
+      <ul class="bnt2" routerLink="/menu">Menu</ul>
+      <ul class="btn3" routerLink="/photos">Photos</ul>
+      <ul class="btn4">Reviews</ul>
+      <ul class="btn5" (click)="openDialog()">PayMeny</ul>
+  </div>
+
+  <mat-divider></mat-divider>
+  <br>
+
+   <div class="mt-3">
+            <label for="FeaturedImageUrl" class="form-label">Featured Image Url</label>
+            <ng-container *ngIf="model.imageUrl !== ''">
+             <div>
+                <img [src]="model.imageUrl" height="10" width="10" class="my-2" alt="">
+             </div>
+            </ng-container>
+            <input type="text" id="featuredImageUrl" name="featuredImageUrl" class="form-control" [(ngModel)]="model.imageUrl">
+        </div>
+
+<br>
+ 
+<!-- <div *ngIf="uploadResponse">
+  <p>Upload Status: {{ uploadResponse.message }}</p>
+  </div> -->
+
+      <div class="about">
+         
+            <div class="about">
+                 <!-- <p class="title_name">Red Rhino Craft Brewery and Inspired Kitchen Menus</p><br> -->
+          <!-- <p>Red Rhino Craft Brewery and Inspired Kitchen Menus</p> -->
+            <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/reviewimages%2F683558%2Fe8087344d571be1149960f50c01f6e820e179585.20230812170538.jpg"
+                 style="width:170px;height:200px;" alt="">
+
+            <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/reviewimages%2F683558%2F12449d16ac6df61524d5e99a231d12adc5b281b1.20230618134024.jpg" style="width:170px;height:200px;" alt="">
+
+          <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/reviewimages%2F683558%2Fb933f4b37db269bc0cd03454e53c7241b170f1b3.20230730180623.jpg" style="width:180px; height:200px;" alt="">
+    
+     <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/reviewimages%2F683558%2F95601214c680e69d2d6cbfc0c618eb8483d848f5.20230618134024.jpg" style="width:180px; height:200px;" alt="">
+    
+
+     
+                </div>
+    
+
+                
+        </div>
+
+
+          
+         
+            <div class="about">
+                 <!-- <p class="title_name">Red Rhino Craft Brewery and Inspired Kitchen Menus</p><br> -->
+          <!-- <p>Red Rhino Craft Brewery and Inspired Kitchen Menus</p> -->
+            <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/reviewimages%2F683558%2F2f6e3e1c8f34981e89b14eb026ce331517289efe.20230526171758.jpg"
+                 style="width:170px;height:200px;" alt="">
+
+            <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/reviewimages%2F683558%2F784b4497ded142628cbc6387415bb2ff5db91d97.20230526171757.jpg" style="width:170px;height:200px;" alt="">
+
+          <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/restaurant%2F683558%2Frestaurant420240120112907.jpg" style="width:180px; height:200px;" alt="">
+    
+     <img class="menu" src="https://d4t7t8y8xqo0t.cloudfront.net/resized/214X180/restaurant%2F683558%2Frestaurant320240120112907.jpg" style="width:180px; height:200px;" alt="">
+    
+
+     
+                </div>
+    
+
+                
+       
+
+
+
+
+     <br>
+    <!-- <app-hotels-list [dataArray]="parentArray"></app-hotels-list> -->
+
+  <div class="map">
+   <google-map height="300px"
+            width="850px"
+            [center]="center"
+            [zoom]="zoom"
+            (mapClick)="moveMap($event)"
+            (mapMousemove)="move($event)">
+</google-map>
+ </div>
+
+<mat-divider></mat-divider>
+
+<br><br>
+
+<div class="features">
+  <p class="feat_title">Restaurant Features</p>
+
+ <!-- <app-child [dataArray]="parentArray"></app-child> -->
+
+
+ 
+   
+</div>
+</mat-card>
+
+  
+
+
+
+<!-- <div class="elfsight-app-ee1bf5c0-24d7-4e49-8f42-4514e263c290" data-elfsight-app-lazy></div> -->
+
+
+
+
+

@@ -42,7 +42,13 @@ import { HotelDetailsComponent } from './components/venues-bars/hotel-details/ho
 import { ChildComponent } from './components/Data-Pass/child/child.component';
 import { ParentComponent } from './components/Data-Pass/parent/parent.component';
 import { MenuComponent } from './components/about-hotels/menu/menu.component';
+import { PhotosComponent } from './components/about-hotels/photos/photos.component';
+import { FooterComponent } from './footer/footer/footer.component';
+import { PayOptionsComponent } from './components/about-hotels/pay-options/pay-options.component';
 // import { AgmCoreModule } from '@angular/google-maps';
+import {MatChipsModule} from '@angular/material/chips';
+import { LandingZaxosComponent } from './components/venues-bars/landing-zaxos/landing-zaxos.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
  
 
@@ -66,7 +72,11 @@ import { MenuComponent } from './components/about-hotels/menu/menu.component';
    HotelDetailsComponent,
    ChildComponent,
    ParentComponent,
-   MenuComponent,     
+   MenuComponent,
+   PhotosComponent,
+   FooterComponent,
+   PayOptionsComponent,
+   LandingZaxosComponent,     
   ],
 
 
@@ -91,7 +101,9 @@ import { MenuComponent } from './components/about-hotels/menu/menu.component';
     MatSelectModule,
     MatBadgeModule,
     MatRadioModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    MatChipsModule,
+    MatSnackBarModule
 
 
 

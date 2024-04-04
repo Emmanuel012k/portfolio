@@ -4,12 +4,15 @@
 
 <mat-icon>plus</mat-icon>
 
-  <div *ngIf="loading" class="loader">
+  <!-- <div *ngIf="loading" class="loader">
      
-  </div>
+  </div> -->
 
 
- <div *ngFor="let data of paymentsList ">
+  <div  *ngIf="loading" id="loader" class="lds-default loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+
+
+<div *ngFor="let data of paymentsList ">
     <!-- <h4>{{data.firstName}}</h4> -->
     <mat-card>
   <mat-card-content>

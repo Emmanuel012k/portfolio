@@ -1,0 +1,20 @@
+
+.dates{
+    display: flex;
+    gap: 30px;
+    border-color: aqua;
+     /* margin-right: 1100px; */
+     cursor: pointer;
+     /* margin-left: 79%; */
+}
+
+mat-card{
+    max-width: 600px;
+    /* text-align: center; */
+    /* margin-left: 200px; */
+    /* gap: 70px; */
+}
+
+.Card{
+    margin-left: 500px;
+}

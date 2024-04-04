@@ -1,6 +1,17 @@
 <mat-toolbar class="nav_">
 <span>Zaxos</span>
  <span class="example-spacer"></span>
+  
+  <mat-form-field>
+  <mat-label>Location</mat-label>
+  <mat-select [(value)]="selected">   
+    <mat-option value="option1">Hyderabad</mat-option>
+    <mat-option value="option2">Mumbai</mat-option>
+    <mat-option value="option3">vICE bURG</mat-option>
+  </mat-select>
+</mat-form-field>
+
+ <input type="text" name="search" id="" placeholder="search">
   <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon" routerLink="/login">
     <mat-icon routerLink="/login">login</mat-icon>
   </button>

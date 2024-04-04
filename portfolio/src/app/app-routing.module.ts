@@ -12,6 +12,9 @@ import { HotelsListComponent } from './components/venues-bars/hotels-list/hotels
 import { HotelDetailsComponent } from './components/venues-bars/hotel-details/hotel-details.component';
 import { ParentComponent } from './components/Data-Pass/parent/parent.component';
 import { MenuComponent } from './components/about-hotels/menu/menu.component';
+import { PhotosComponent } from './components/about-hotels/photos/photos.component';
+import { PayOptionsComponent } from './components/about-hotels/pay-options/pay-options.component';
+import { LandingZaxosComponent } from './components/venues-bars/landing-zaxos/landing-zaxos.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' }, 
@@ -26,7 +29,10 @@ const routes: Routes = [
   {path:'bars-pubs', component:HotelsListComponent},
   {path:'hotel-details', component:HotelDetailsComponent},
   {path:'parent', component:ParentComponent},
-  {path:'menu', component:MenuComponent}
+  {path:'menu', component:MenuComponent},
+  {path:'photos', component:PhotosComponent},
+  {path:'pay-options', component:PayOptionsComponent},
+  {path:'home', component:LandingZaxosComponent}
 
 ];
 

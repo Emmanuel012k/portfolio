@@ -1,0 +1,202 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.arrow_r{
+    margin-left: 1560px;
+    /* margin-top: 100px; */
+    background-color: black;
+    color: wheat;
+}
+
+.arrow_l{
+    margin-right: 100px;
+    margin-top: -90px;
+      background-color: black;
+    color: wheat;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+ 
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+nav button {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: bisque;
+}
+
+nav button img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover; /* Maintain image aspect ratio */
+}
+
+nav button:hover {
+  background-color: #e0e0e0;
+}
+
+main {
+  width: 100%;
+}
+
+section {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+.image-slider {
+  position: relative; /* Required for button positioning */
+  overflow: hidden; /* Hide overflowing content */}
+
+.image-slider .img_c {
+  width: 100%; /* Make images fill the container width */
+  display: block;
+  transition: transform 0.5s ease-in-out; /* Add smooth transition effect */
+}
+
+.image-slider .img_c.active {
+  opacity: 1; /* Make the active slide fully visible */
+  transform: translateX(0); /* Set position of active slide */
+}
+
+.image-slider .img_c:not(.active) {
+  opacity: 0; /* Hide inactive slides */
+  transform: translateX(-100%); /* Position inactive slides off-screen */
+}
+
+.image-slider button {
+  position: absolute; /* Position buttons within the slider */
+  top: 50%;
+  transform: translateY(-50%); /* Center buttons vertically */
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.image-slider button:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Add hover effect */
+}
+
+
+
+.card-container {
+    margin-top: -120px;
+  display: flex;
+  flex-wrap: wrap; /* Wrap cards if overflow */
+  justify-content: space-between; /* Distribute cards evenly */
+  margin: 0 auto; /* Center the container horizontally */
+  width: 80%; /* Adjust container width as needed */
+}
+
+.card {
+  width: 300px; /* Adjust card width as needed */
+  margin: 10px; /* Add spacing between cards */
+  position: relative; /* Needed for text overlay positioning */
+}
+
+.card .img_c {
+  width: 100%;
+  height: 200px; /* Adjust image height as needed */
+  object-fit: cover; /* Ensure image fills the container */
+}
+
+.card-text {
+  position: absolute; /* Position text overlay on top of image */
+  bottom: 0;
+  width: 100%;
+  
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.card-text h2 {
+  margin-top: 0;
+  font-size: 1.2em; /* Adjust heading size as needed */
+}
+
+.card-text p {
+  margin-bottom: 0;
+}
